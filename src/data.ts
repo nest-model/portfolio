@@ -1,8 +1,8 @@
 // ← Заполни свои контакты. Пустые поля скрываются автоматически.
 export const CONTACT = {
   github: 'https://github.com/NEST-MODEL',
-  telegram: '', // например 'https://t.me/username'
-  whatsapp: '', // например 'https://wa.me/77001234567'
+  telegram: 'https://t.me/lyohacray',
+  whatsapp: '',
   instagram: '', // например 'https://instagram.com/username'
   email: '', // например 'hello@example.com'
 }

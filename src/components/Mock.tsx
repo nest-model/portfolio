@@ -65,7 +65,7 @@ function Formula({ big }: { big?: boolean }) {
   )
   return (
     <div className="relative flex h-full w-full items-center justify-center gap-5 overflow-hidden" style={{ background: 'radial-gradient(circle at 70% 20%, #3a3000, #0b0b0b 65%)' }}>
-      {big ? <><div className="-ml-6 translate-y-6">{admin}</div><div className="-ml-2 translate-y-8">{phone}</div></> : <><div className="-ml-4">{admin}</div><div className="translate-y-8">{phone}</div></>}
+      {big ? <><div className="-ml-6 translate-y-6 max-md:hidden">{admin}</div><div className="-ml-2 translate-y-8">{phone}</div></> : <><div className="-ml-4">{admin}</div><div className="translate-y-8">{phone}</div></>}
     </div>
   )
 }
@@ -76,9 +76,9 @@ function Fitness() {
     <div className="flex h-full w-full items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(135deg,#1a1a1a,#050505)' }}>
       <Browser bg="#0b0b0b" url="formulafitnes" className="w-[78%] translate-y-6">
         <div className="relative p-5" style={{ height: 210 }}>
-          <div className="absolute inset-y-0 right-0 w-1/3 -skew-x-12" style={{ background: Y }} />
+          <div className="absolute inset-y-0 -right-4 w-1/4 -skew-x-12" style={{ background: Y }} />
           <div className="relative text-[8px] uppercase tracking-[.25em] text-white/40">Фитнес-клуб · Шымкент</div>
-          <div className="relative mt-2 font-display text-[22px] font-semibold uppercase leading-[1.05] text-white">Пробная<br />тренировка<br /><span style={{ color: Y }}>бесплатно</span></div>
+          <div className="relative mt-2 font-display text-[17px] font-semibold uppercase leading-[1.05] text-white sm:text-[22px]">Пробная<br />тренировка<br /><span style={{ color: Y }}>бесплатно</span></div>
           <div className="relative mt-4 inline-block rounded-full px-4 py-1.5 text-[9px] font-semibold text-black" style={{ background: Y }}>Записаться</div>
         </div>
       </Browser>
